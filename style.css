@@ -1,0 +1,131 @@
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+#rps-game{
+    background-color: rgb(243, 110, 110);
+    min-height: 50%;
+    min-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#img-container{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    min-width: 50%;
+    border: 1px solid red;
+}
+
+.game-element{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#rock{
+    background-image: url(./images/rock.png);
+    display: none;
+}
+#rock.be-active{
+    display: block;
+}
+
+#paper{
+    background-image: url(./images/paper.png);
+    display: none;
+}
+
+#paper.be-active{
+    display: block;
+}
+
+#scissors{
+    background-image: url(./images/scissor.png);
+    background-size: 80%;
+    background-position: center;
+    display: none;
+}
+#scissors.be-active{
+    display: block;
+}
+
+
+#b-rock{
+    background-image: url(./images/rock.png);
+    display: none;
+}
+#b-rock.be-active{
+    display: block;
+}
+
+#b-paper{
+    background-image: url(./images/paper.png);
+    display: none;
+}
+
+#b-paper.be-active{
+    display: block;
+}
+
+#b-scissors{
+    background-image: url(./images/scissor.png);
+    background-size: 80%;
+    background-position: center;
+    display: none;
+}
+#b-scissors.be-active{
+    display: block;
+}
+
+
+#button-container{
+    display: flex;
+    min-width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-button{
+    padding: 7px 20px 7px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0px 30px 0px;
+}
+
+
+#user-section{
+    position: relative;
+    display: flex;
+    width: 400px;
+    border: 1px solid purple;
+
+}
+
+.user-element{
+    position: absolute;
+    
+}
+
+#bot-section{
+    position: relative;
+    display: flex;
+    width: 400px;
+    border: 1px solid green;
+}
+
+.bot-element{
+    position: absolute;
+}

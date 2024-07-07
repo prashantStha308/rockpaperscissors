@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rock Paper Sissors </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="rps-game">
+
+        <h1 id="game-heading">
+            Rock - Paper - Scissors
+        </h1>
+
+        <div id="img-container">
+          <div id="user-section">
+            <div id="rock" class="game-element" class="user-element" > Rock </div>
+            <div id="paper" class="game-element" class="user-element" > Paper </div>
+            <div id="scissors" class="game-element" class="user-element" > Scissors </div>
+          </div>
+          <div id="bot-section">
+            <div id="b-rock" class="game-element" class="bot-element" > Rock </div>
+            <div id="b-paper" class="game-element" class="bot-element" > Paper </div>
+            <div id="b-scissors" class="game-element" class="bot-element" > Scissors </div>
+          </div>
+        </div>
+
+        <div id="button-container">
+            <button class="game-button" onclick="userSelect('rock')" onclick="resetUser()"> Rock </button>
+            <button class="game-button" onclick="userSelect('paper')" onclick="resetUser()"> Paper </button>
+            <button class="game-button" onclick="userSelect('scissors')" onclick="resetUser()"> Scissors </button>
+        </div>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
